@@ -10,14 +10,6 @@ import { RevenueChartSkeleton, LatestInvoicesSkeleton, CardsSkeleton, } from '@/
 export default async function Page() {
   console.log("dashboard 渲染了");
   const { totalPaidInvoices, totalPendingInvoices, numberOfCustomers, numberOfInvoices } = await fetchCardData();
-  const test={
-    myJson: {
-      key1: 'value1',
-      key2: 'value2',
-      key3: 'value3'
-    }
-  };
-  console.debug(test.myJson.key1);
   
   return (
      <main>
